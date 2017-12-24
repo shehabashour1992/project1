@@ -19,8 +19,8 @@ TextView text1,text2,text3;
         Intent i=getIntent();
         DepartmentClass d= (DepartmentClass) getIntent().getSerializableExtra("data");
 
-        text1.setText(d.toString());
-        text2.setText(d.toString());
-        text3.setText(d.toString());
+        text1.setText(String.valueOf(d.getNumber()));
+        text2.setText(d.getName());
+        text3.setText(d.getDestination());
     }
 }

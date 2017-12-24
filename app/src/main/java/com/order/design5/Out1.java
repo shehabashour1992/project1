@@ -23,10 +23,11 @@ public class Out1 extends AppCompatActivity {
         Intent i=getIntent();
         EmployeesClass e= (EmployeesClass) getIntent().getSerializableExtra("table");
 
-        text1.setText(e.toString());
-        text2.setText(e.toString());
-        text3.setText(e.toString());
-        text4.setText(e.toString());
-        text5.setText(e.toString());
+
+        text1.setText(String.valueOf(e.getId()));
+        text2.setText(e.getName());
+        text3.setText(e.getAddress());
+        text4.setText(String.valueOf(e.getSalary()));
+        text5.setText(e.getJob());
     }
 }
